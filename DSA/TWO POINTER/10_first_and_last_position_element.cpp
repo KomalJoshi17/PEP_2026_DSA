@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
+// https://www.geeksforgeeks.org/problems/first-and-last-occurrences-of-x3116/1
 
 // class Solution {
 // public:
