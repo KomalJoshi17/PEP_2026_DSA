@@ -1,0 +1,18 @@
+// https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/B
+
+#include<bits/stdc++.h>
+using namespace std;
+ 
+void print(int n){
+    if(n==0) return;
+
+    print(n-1);
+    cout<<n<<endl;
+}
+
+int main(){
+    int n;
+    cin>>n;
+    print(n);
+    return 0;
+}
