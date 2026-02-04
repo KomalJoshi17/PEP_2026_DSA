@@ -31,6 +31,13 @@ void insertAtFront(Node* &head, int val){
 void insertAtPos(Node* &head,int val,int pos){
     Node* newNode=new Node(val);
 
+    if(head==NULL){
+        head=newNode;
+        head->next=NULL;
+        head->prev=NULL;
+        return;
+    }
+
     if(pos==1){
         insertAtFront(head,val);
         return;
@@ -41,9 +48,11 @@ void insertAtPos(Node* &head,int val,int pos){
     while(temp!=NULL){
         count++;
         if(count==pos-1){
-            temp->next=newNode;
+            newNode->next=temp->next;
             newNode->prev=temp;
-            temp=newNode;
+            
+            temp->next=newNode;
+            temp->next->prev=newNode;
         }
         temp=temp->next;
     }
