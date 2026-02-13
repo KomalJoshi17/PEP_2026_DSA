@@ -1,8 +1,34 @@
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
+// https://www.geeksforgeeks.org/problems/inorder-traversal/1
+
+/*
+class Node {
+  public:
+    int data;
+    Node* left;
+    Node* right;
+
+    Node(int val) {
+        data = val;
+        left = NULL;
+        right = NULL;
+    }
+};
+*/
+
+// class Solution {
+//   public:
+//     void inorder(Node* root, vector<int>&ans){
+//         if(root==NULL) return;
+        
+//         inorder(root->left,ans);
+//         ans.push_back(root->data);
+//         inorder(root->right,ans);
+//     }
     
-int main(){
-    
-    return 0;
-}
+//     vector<int> inOrder(Node* root) {
+//         // code here
+//         vector<int>ans;
+//         inorder(root,ans);
+//         return ans;
+//     }
+// };
