@@ -51,8 +51,11 @@ void insertAtPos(Node* &head,int val,int pos){
             newNode->next=temp->next;
             newNode->prev=temp;
             
+            if(temp->next!=NULL)   // important for last position
+                temp->next->prev=newNode;
+
             temp->next=newNode;
-            temp->next->prev=newNode;
+            return;   // stop after insertion
         }
         temp=temp->next;
     }
