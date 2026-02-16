@@ -17,13 +17,13 @@ public:
 //   public:
 //     int height(Node* root) {
 //         // code here
-//         if (root == nullptr) {
+//         if(root==nullptr){
 //             return -1;
 //         }
         
-//         int leftHeight = height(root->left);
-//         int rightHeight = height(root->right);
+//         int left=height(root->left);
+//         int right=height(root->right);
         
-//         return 1+max(leftHeight, rightHeight);
+//         return 1+max(left,right);
 //     }
 // };
