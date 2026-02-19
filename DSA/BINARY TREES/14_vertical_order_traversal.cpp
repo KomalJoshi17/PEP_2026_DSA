@@ -38,7 +38,10 @@
 //         for(auto &p:nodes){
 //             vector<int>col;
 //             for(auto &lvl:p.second){
-//                 col.insert(col.end(),lvl.second.begin(), lvl.second.end());
+//                 // col.insert(col.end(),lvl.second.begin(), lvl.second.end());
+//                 for(auto values:lvl.second){
+//                     col.push_back(values);
+//                 }
 //             }
 //             ans.push_back(col);
 //         }
