@@ -1,14 +1,4 @@
-/* 
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
-*/
-
-int deepestLeavesSum(TreeNode* root) {
-    // add your code here
+int deepestLeavesSum(TreeNode* root) 
     if(!root) return 0;
 
     queue<TreeNode*>q;
