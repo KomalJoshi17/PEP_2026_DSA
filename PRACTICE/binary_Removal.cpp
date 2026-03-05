@@ -1,5 +1,4 @@
 string binaryRemoval(string& s) {
-    // add your code here
     string result="";
 
     for(char ch:s){
