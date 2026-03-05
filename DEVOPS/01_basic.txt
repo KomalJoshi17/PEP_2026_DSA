@@ -1,0 +1,4 @@
+windows tools :-
+
+install chocolatey from the instructions given
+https://chocolatey.org/install
