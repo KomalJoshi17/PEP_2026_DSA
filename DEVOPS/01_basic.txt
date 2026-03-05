@@ -2,3 +2,7 @@ windows tools :-
 
 install chocolatey from the instructions given
 https://chocolatey.org/install
+
+choco install vagrant --version=2.4.3 -y
+
+choco install virtualbox --version=7.1.4 -y
