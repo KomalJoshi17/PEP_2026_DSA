@@ -1,10 +1,3 @@
-/* structure for a node
-struct Node {
-    int data;
-    Node *left, *right;
-    Node(int val) { data = val; left = right = NULL; }
-}; */
-
 vector<int> topView(Node* root) {
     // add your code here
     vector<int>result;
