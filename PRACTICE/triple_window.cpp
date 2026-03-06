@@ -1,5 +1,4 @@
 int countGoodSubstrings(string s) {
-    // add your code here
     int count=0;
     int n=s.size();
 

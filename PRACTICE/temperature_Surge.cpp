@@ -1,5 +1,4 @@
 vector<int> nextHigherTemperatures(vector<int>& temperatures) {
-    // add your code here
     int n=temperatures.size();
     vector<int>ans(n,-1);
     stack<int> st;
