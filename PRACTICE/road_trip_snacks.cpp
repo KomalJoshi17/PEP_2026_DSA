@@ -1,5 +1,4 @@
 int maxEnergyBars(vector<int>& arr, int k) {
-    // Your implementation here
     int sum=0;
     for(int i=0;i<k;i++){
         sum+=arr[i];

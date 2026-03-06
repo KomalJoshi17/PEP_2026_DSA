@@ -1,14 +1,3 @@
-/*
-class Node {
-  public:
-    int data;
-    Node *next;
-    Node(int x) {
-        data = x;
-        next = nullptr;
-    }
-};
-*/
 Node* reverseList(Node* head){
     Node* prev=nullptr;
     Node* curr=head;
@@ -34,7 +23,6 @@ Node* findMiddle(Node* head){
 }
 
 bool isPalindrome(Node* head) {
-    // add your code here
     if(head==nullptr || head->next==nullptr)
         return true;
     
