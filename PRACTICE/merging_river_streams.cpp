@@ -1,16 +1,4 @@
-/*  
-   Definition for singly-linked list node:
-   
-   struct ListNode {
-    int val;
-    ListNode* next;
-    ListNode(int x) : val(x), next(NULL) {}
-};
-
-*/
-
 ListNode* mergeStreams(ListNode* l1, ListNode* l2) {
-   // add your code here
    if(!l1) return l2;
    if(!l2) return l1;
 
