@@ -3,7 +3,7 @@ public:
     int calculate(string s) {
         stack<long long> st;
         long long num = 0;
-        char op = '+';   // previous operator
+        char op = '+'; 
         
         for (int i = 0; i < s.length(); i++) {
             
@@ -11,7 +11,6 @@ public:
                 num = num * 10 + (s[i] - '0');
             }
             
-            // If operator OR end of string
             if ((!isdigit(s[i]) && s[i] != ' ') || i == s.length() - 1) {
                 
                 if (op == '+') {
@@ -26,7 +25,7 @@ public:
                 }
                 else if (op == '/') {
                     long long top = st.top(); st.pop();
-                    st.push(top / num);   // truncates toward 0 in C++
+                    st.push(top / num);   
                 }
                 
                 op = s[i];
