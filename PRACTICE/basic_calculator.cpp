@@ -1,40 +1,40 @@
-class Solution {
-public:
-    int calculate(string s) {
-        long long result = 0, number = 0;
-        int sign = 1;
-        stack<long long> st;
+// class Solution {
+// public:
+//     int calculate(string s) {
+//         long long result = 0, number = 0;
+//         int sign = 1;
+//         stack<long long> st;
 
-        for (char ch : s) {
+//         for (char ch : s) {
 
-            if (isdigit(ch)) {
-                number = number * 10 + (ch - '0');
-            }
-            else if (ch == '+') {
-                result += sign * number;
-                number = 0;
-                sign = 1;
-            }
-            else if (ch == '-') {
-                result += sign * number;
-                number = 0;
-                sign = -1;
-            }
-            else if (ch == '(') {
-                st.push(result);
-                st.push(sign);
-                result = 0;
-                sign = 1;
-            }
-            else if (ch == ')') {
-                result += sign * number;
-                number = 0;
+//             if (isdigit(ch)) {
+//                 number = number * 10 + (ch - '0');
+//             }
+//             else if (ch == '+') {
+//                 result += sign * number;
+//                 number = 0;
+//                 sign = 1;
+//             }
+//             else if (ch == '-') {
+//                 result += sign * number;
+//                 number = 0;
+//                 sign = -1;
+//             }
+//             else if (ch == '(') {
+//                 st.push(result);
+//                 st.push(sign);
+//                 result = 0;
+//                 sign = 1;
+//             }
+//             else if (ch == ')') {
+//                 result += sign * number;
+//                 number = 0;
 
-                result *= st.top(); st.pop();
-                result += st.top(); st.pop();
-            }
-        }
+//                 result *= st.top(); st.pop();
+//                 result += st.top(); st.pop();
+//             }
+//         }
 
-        return result + sign * number;
-    }
-};
+//         return result + sign * number;
+//     }
+// };
