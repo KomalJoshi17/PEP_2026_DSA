@@ -1,6 +1,5 @@
 class Codec {
 public:
-    // Helper function for serialization
     void serializeHelper(TreeNode* root, string& result) {
         if (!root) {
             result += "null,";
@@ -11,14 +10,12 @@ public:
         serializeHelper(root->right, result);
     }
 
-    // Encodes a tree to a single string.
     string serialize(TreeNode* root) {
         string result;
         serializeHelper(root, result);
         return result;
     }
 
-    // Helper function for deserialization
     TreeNode* deserializeHelper(queue<string>& nodes) {
         string val = nodes.front();
         nodes.pop();
@@ -31,7 +28,6 @@ public:
         return root;
     }
 
-    // Decodes your encoded data to tree.
     TreeNode* deserialize(string data) {
         stringstream ss(data);
         string token;
