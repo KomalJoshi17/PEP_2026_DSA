@@ -3,7 +3,6 @@
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
-        
         for(int i = 0; i < strs[0].length(); i++) {
             char c = strs[0][i];
 
@@ -13,7 +12,6 @@ public:
                 }
             }
         }
-
         return strs[0];
     }
 };
